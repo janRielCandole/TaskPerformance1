@@ -37,8 +37,8 @@ namespace BasicQueuingSystemApplication
 
         private void BtnNext_Click(object sender, EventArgs e)
         {
-            CashierWindowQueueForm CashierWindowQueueForm = new CashierWindowQueueForm();
-            CashierWindowQueueForm.ShowDialog();
+            CustomerView CustomerView = new CustomerView();
+            CustomerView.ShowDialog();
         }
         Timer timer = new Timer();
         private void CashierWindowQueueForm_Load(object sender, EventArgs e)

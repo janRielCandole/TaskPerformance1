@@ -28,7 +28,10 @@ namespace BasicQueuingSystemApplication
             CashierClass.getNumberInQueue=lblQueue.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
 
-         }
+            CashierWindowQueueForm CashierWindowQueueForm = new CashierWindowQueueForm();
+            CashierWindowQueueForm.ShowDialog();
+
+        }
 
         private void QueuingForm_Load(object sender, EventArgs e)
         {

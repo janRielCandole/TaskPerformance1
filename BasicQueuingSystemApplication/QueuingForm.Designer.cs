@@ -73,7 +73,7 @@
             this.Controls.Add(this.lblQueue);
             this.Controls.Add(this.btnCasher);
             this.Name = "QueuingForm";
-            this.Text = "QueuingForm";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.QueuingForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

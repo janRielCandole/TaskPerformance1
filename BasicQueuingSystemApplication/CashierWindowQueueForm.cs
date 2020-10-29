@@ -59,5 +59,9 @@ namespace BasicQueuingSystemApplication
         private void timer_Tick(object sender, EventArgs e){
         }
 
+        private void listCashierQueue_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }

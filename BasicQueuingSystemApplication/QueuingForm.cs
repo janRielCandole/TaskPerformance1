@@ -27,6 +27,7 @@ namespace BasicQueuingSystemApplication
             lblQueue.Text=cashier.CashierGeneratedNumber("P-");
             CashierClass.getNumberInQueue=lblQueue.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
+
          }
 
         private void QueuingForm_Load(object sender, EventArgs e)

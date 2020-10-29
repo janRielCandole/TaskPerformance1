@@ -30,6 +30,7 @@
         {
             this.btnCasher = new System.Windows.Forms.Button();
             this.lblQueue = new System.Windows.Forms.Label();
+            this.lblPosition = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCasher
@@ -46,24 +47,36 @@
             // lblQueue
             // 
             this.lblQueue.Font = new System.Drawing.Font("Consolas", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQueue.Location = new System.Drawing.Point(283, 97);
+            this.lblQueue.Location = new System.Drawing.Point(329, 120);
             this.lblQueue.Name = "lblQueue";
             this.lblQueue.Size = new System.Drawing.Size(321, 74);
             this.lblQueue.TabIndex = 1;
             this.lblQueue.Text = "P-10007";
             this.lblQueue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Font = new System.Drawing.Font("Consolas", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition.Location = new System.Drawing.Point(322, 57);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(340, 40);
+            this.lblPosition.TabIndex = 2;
+            this.lblPosition.Text = "Position in Queue";
+            // 
             // QueuingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPosition);
             this.Controls.Add(this.lblQueue);
             this.Controls.Add(this.btnCasher);
             this.Name = "QueuingForm";
             this.Text = "QueuingForm";
             this.Load += new System.EventHandler(this.QueuingForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -71,6 +84,7 @@
 
         private System.Windows.Forms.Button btnCasher;
         private System.Windows.Forms.Label lblQueue;
+        private System.Windows.Forms.Label lblPosition;
     }
 }
 

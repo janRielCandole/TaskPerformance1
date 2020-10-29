@@ -42,6 +42,7 @@
             this.listCashierQueue.Size = new System.Drawing.Size(411, 425);
             this.listCashierQueue.TabIndex = 0;
             this.listCashierQueue.UseCompatibleStateImageBehavior = false;
+            this.listCashierQueue.SelectedIndexChanged += new System.EventHandler(this.listCashierQueue_SelectedIndexChanged);
             // 
             // btnRefresh
             // 

@@ -19,14 +19,6 @@ namespace BasicQueuingSystemApplication
             InitializeComponent();
         }
 
-        private void BtnRefresh_Click(object sender, EventArgs e)
-        {
-            DisplayCashierQueue(CashierClass.CashierQueue);
-
-            CustomerView CustomerView = new CustomerView();
-            CustomerView.ShowDialog();
-        }
-
         public void DisplayCashierQueue(IEnumerable CashierList)
         {
                 listCashierQueue.Items.Clear();
@@ -36,12 +28,6 @@ namespace BasicQueuingSystemApplication
                 }
             }
 
-
-        private void BtnNext_Click(object sender, EventArgs e)
-        {
-            CashierWindowQueueForm CashierWindowQueueForm = new CashierWindowQueueForm();
-            CashierWindowQueueForm.ShowDialog();
-        }
         Timer timer = new Timer();
         private void CashierWindowQueueForm_Load(object sender, EventArgs e)
         {
@@ -52,9 +38,13 @@ namespace BasicQueuingSystemApplication
         {
             DisplayCashierQueue(CashierClass.CashierQueue);
             timer.Stop();
+
         }
+
         private void btnNext_Click(object sender, EventArgs e)
         {
+            CustomerView CustomerView = new CustomerView();
+            CustomerView.ShowDialog();
             timer.Start();
         }
 

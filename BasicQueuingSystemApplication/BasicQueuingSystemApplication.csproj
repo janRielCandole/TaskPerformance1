@@ -59,6 +59,7 @@
     <Compile Include="CustomerView.Designer.cs">
       <DependentUpon>CustomerView.cs</DependentUpon>
     </Compile>
+    <Compile Include="lblCustomerView.cs" />
     <Compile Include="QueuingForm.cs">
       <SubType>Form</SubType>
     </Compile>
